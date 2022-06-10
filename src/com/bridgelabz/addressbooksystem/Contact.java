@@ -65,10 +65,4 @@ public class Contact {
         this.zip = zip;
         
     }
-
-	@Override
-	public String toString() {
-		return "Contact [city=" + city + ", state=" + state + ", zip=" + zip + ", firstName=" + firstName
-				+ ", lastName=" + lastName + ", phoneNumber=" + phoneNumber + ", emailId=" + emailId + "]";
-	}
 }

@@ -3,12 +3,9 @@ package com.bridgelabz.addressbooksystem;
 import java.util.Scanner;
 
 public class AddressBook {
-	public void showAddressBook() {
-
-	}
 
 	public void addContact() {
-	
+
 		Scanner sc = new Scanner(System.in);
 		Contact contact = new Contact();
 
@@ -44,27 +41,33 @@ public class AddressBook {
 
 		System.out.println("Contact added details are: ");
 
-		//list.add(contact);
-
 		System.out.println("New added contact details are: ");
-		
-		  System.out.println("FirstName:" + contact.getFirstName() + "\t" + "LastName:"
-		  + contact.getLastName() + "\t" + "PhoneNumber:" + contact.getPhoneNumber() +
-		  "\t" + "Email Id:" + contact.getEmailId() + "\t" + "City:" +
-		  contact.getCity() + "\t" + "State:" + contact.getState() + "\t" + "Zip:" +
-		  contact.getZip());
-		 
-		//System.out.println(contact);
-		//sc.close();
+
+		System.out.println("FirstName: " + contact.getFirstName() + "\t" + "LastName: " + contact.getLastName() + "\t"
+				+ "PhoneNumber: " + contact.getPhoneNumber() + "\t" + "Email Id: " + contact.getEmailId() + "\t"
+				+ "City: " + contact.getCity() + "\t" + "State: " + contact.getState() + "\t" + "Zip: "
+				+ contact.getZip());
+
+		// sc.close();
+	}
+
+	public void searchContact() {
+		// TODO Auto-generated method stub
+
 	}
 
 	public void deleteContact() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Enter the name to search and delete");
+		Scanner sc = new Scanner(System.in);
+		String s = sc.next();
+
 	}
 
 	public void editContact() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Enter person name for edit contact: ");
+		Scanner sc = new Scanner(System.in);
+		String firstName = sc.next();
+
 	}
+
 }

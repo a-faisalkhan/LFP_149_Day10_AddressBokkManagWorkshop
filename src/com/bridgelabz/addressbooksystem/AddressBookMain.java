@@ -8,9 +8,9 @@ public class AddressBookMain {
 		System.out.println("Welcome to Address Book Management System");
 
 		System.out.println("1. Add Contact");
-		System.out.println("2. Show Contacts");
+		System.out.println("2. Edit Contact");
 		System.out.println("3. Delete Contact");
-		System.out.println("4. Edit Contact");
+		System.out.println("4. Search Contact");
 		System.out.println("5. Exit");
 		System.out.println("Enter your desired option:");
 		
@@ -23,13 +23,13 @@ public class AddressBookMain {
 				addressBook.addContact();
 				break;
 			case 2: 
-				addressBook.showAddressBook();
+				addressBook.editContact();
 				break;
 			case 3: 
 				addressBook.deleteContact();
 				break;	
 			case 4: 
-				addressBook.editContact();
+				addressBook.searchContact();
 				break;
 			case 5:
 				option = 5;
@@ -40,9 +40,9 @@ public class AddressBookMain {
 			}
 			
 			System.out.println("1. Add Contact");
-			System.out.println("2. Show Contacts");
+			System.out.println("2. Edit Contact");
 			System.out.println("3. Delete Contact");
-			System.out.println("4. Edit Contact");
+			System.out.println("4. Search Contact");
 			System.out.println("5. Exit");
 			System.out.println("Enter your desired option:");
 			
